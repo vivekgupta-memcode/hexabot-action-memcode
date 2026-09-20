@@ -1,0 +1,51 @@
+{
+  "name": "hexabot-action-memcode",
+  "version": "0.1.0",
+  "description": "Hexabot v3 workflow actions for Memcode long-term memory",
+  "license": "Apache-2.0",
+  "author": "Memcode",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "vitest run",
+    "prepack": "npm run build"
+  },
+  "keywords": [
+    "hexabot",
+    "hexabot-action",
+    "memcode",
+    "memory",
+    "ai-agent"
+  ],
+  "engines": {
+    "node": ">=24.17.0"
+  },
+  "peerDependencies": {
+    "@hexabot-ai/api": "^3.5.0"
+  },
+  "dependencies": {
+    "memcode-sdk": "^2.4.1",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@hexabot-ai/api": "^3.5.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivekgupta-memcode/hexabot-action-memcode.git"
+  },
+  "homepage": "https://memcode.in"
+}
